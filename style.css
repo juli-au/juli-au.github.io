@@ -1,0 +1,100 @@
+/*Minimal CSS resets*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%; /* Set height to 100% so that we can bottom align text easily */
+}
+
+html {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(juliau-cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: flex-end;
+  padding: 5vw 5vh;
+}
+
+header h1,
+header p {
+  text-align: right;
+  color: lightgrey;
+  text-shadow: 0 1px 0 black;
+  margin: 0;
+  font-family: 'Comforter Brush', cursive;
+}
+
+header h1 {
+  font-size: 75px; /* Use px rather than the a11y friendly rem as fonts are very large already */
+  line-height: 1em;
+}
+
+header p {
+  font-size: 45px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: darkorange;
+}
+
+a:hover {
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 769px) {
+  header h1 {
+    font-size: 120px;
+  }
+
+  header p {
+    font-size: 65px;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  header h1 {
+    font-size: 185px;
+  }
+
+  header p {
+    font-size: 90px;
+  }
+}
